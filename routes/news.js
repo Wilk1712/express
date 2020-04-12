@@ -5,7 +5,7 @@ const News = require('../models/news');
 /* GET home page. */
 router.get('/', (req, res)=>{
   
-  const search=req.query.search;
+  const search=req.query.search||'';
 
 
   const findNews = News
